@@ -1,0 +1,58 @@
+/* TODO: add a font? i kinda like the default one, but maybe it's bad */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+html,
+body {
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top-bg {
+  @apply absolute top-0 left-0 -z-10 h-96 w-screen bg-cyan-400;
+  transform: skewY(-7deg) translateY(-30%);
+}
+
+.card {
+  @apply min-h-80 w-72 bg-slate-50 shadow-lg;
+}
+
+/* TODO: for some reason the img takes up 100%-4px width */
+.card > img {
+  @apply w-full min-h-52 bg-green-500 flex items-center justify-center capitalize text-2xl;
+}
+
+.text {
+  @apply p-4 mt-1;
+}
+
+.desc {
+  @apply text-black/90;
+}
+
+.title {
+  @apply text-xl mb-2;
+}
+
+.links {
+  @apply flex gap-4 mt-4;
+}
+
+.links img,
+.links > a {
+  @apply w-7 h-auto;
+}
+
+@media (min-width: 1024px) {
+  .lg-min-size-unset {
+    min-width: unset !important;
+    min-height: unset !important;
+  }
+}
