@@ -7,10 +7,10 @@
     <title>Homepage</title>
   </head>
   <body>
-    <div class="h-screen box-border antialiased">
+    <div class="h-screen box-border antialiased lg:flex lg:flex-col lg:items-center lg:gap-8">
       <div class="top-bg"></div>
       <header
-        class="min-h-60 flex flex-col items-center mt-12 gap-8 md:block lg:flex lg:flex-row lg:gap-0 lg:mx-44"
+        class="min-h-60 flex flex-col items-center mt-12 lg:mt-32 gap-8 md:block lg:flex lg:flex-row lg:gap-0 lg:mx-64"
       >
         <section
           class="size-60 lg:size-96 relative shadow-sm md:float-left md:block md:ml-12 md:mr-8 md:size-80 lg:flex-shrink-0 lg:mx-0"
@@ -24,7 +24,7 @@
           <p class="absolute bottom-2 left-4 text-white text-xl lg:text-3xl">Wait im gyated</p>
         </section>
         <div
-          class="lg-min-size-unset bg-white p-4 mx-12 min-w-80 shadow-xl md:min-h-80 lg:mx-0 lg:max-w-[850px]"
+          class="bg-white p-4 mx-12 min-w-80 shadow-xl md:min-h-80 lg:mx-0 lg:max-w-[850px] lg:max-h-[360px] lg:min-h-[330px] lg:min-w-[370px] lg:overflow-y-scroll"
         >
           <h2
             class="font-semibold text-center mb-4 text-2xl lg:text-left lg:text-3xl lg:ml-6"
@@ -62,12 +62,12 @@
           </ul>
         </div>
       </header>
-      <main class="mt-20 mb-16">
-        <span class="text-3xl flex justify-center items-center mb-12"
+      <main class="mt-20 mb-16 lg:flex lg:flex-col lg:items-center">
+        <span class="text-3xl mb-12 flex items-center justify-center"
           >My work</span
         >
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-16 md:mx-14"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-16 md:mx-14 lg:max-w-[1150px]"
         >
           <div class="card">
             <img src="project1.png" alt="project screenshot" />
@@ -247,7 +247,7 @@
         </div>
       </main>
       <footer
-        class="mt-5 bg-cyan-500 text-white md:flex md:justify-between lg:justify-center lg:gap-20"
+        class="mt-5 bg-cyan-500 text-white md:flex md:justify-between lg:justify-center lg:gap-20 lg:w-screen"
       >
         <div
           class="p-8 pb-4 flex flex-col justify-around items-center lg:max-w-[420px]"
